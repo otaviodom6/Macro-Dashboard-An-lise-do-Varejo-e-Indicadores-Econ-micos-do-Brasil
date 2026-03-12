@@ -172,11 +172,16 @@ O objetivo foi criar um dashboard com estética semelhante aos utilizados em **c
 
 # 📷 Visualização do Projeto
 
-*(Adicione aqui imagens do dashboard)*
+
+<img width="1920" height="1080" alt="Consumo" src="https://github.com/user-attachments/assets/7e6eeefe-c2a8-4ae6-8f3a-60e3fdfe4382" />
 
 
 
----
+<img width="1920" height="1080" alt="Desempenho" src="https://github.com/user-attachments/assets/200f1495-f4e9-446b-b330-93c0d9fb1adf" />
+
+
+
+<img width="1920" height="1080" alt="Setores" src="https://github.com/user-attachments/assets/67b2d6f2-eb57-4979-b458-0096e3a3ed4d" />
 
 # 🚀 Possíveis Melhorias Futuras
 
