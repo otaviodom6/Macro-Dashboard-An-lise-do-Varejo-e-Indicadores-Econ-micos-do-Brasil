@@ -1,10 +1,10 @@
-Macro Dashboard — Inteligência de Mercado para o Varejo Brasileiro
+# Macro Dashboard — Inteligência de Mercado para o Varejo Brasileiro
 
 Este projeto não é apenas um dashboard.
 
 Ele foi desenvolvido como uma ferramenta de suporte à decisão para entender quando o varejo deve acelerar, desacelerar ou ajustar sua estratégia, com base em indicadores macroeconômicos reais.
 
- Problema de Negócio
+ # Problema de Negócio
 
 Empresas do varejo frequentemente tomam decisões de expansão, precificação e estoque sem considerar adequadamente o contexto macroeconômico.
 
