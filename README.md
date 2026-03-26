@@ -16,7 +16,7 @@ Como consequência:
 
 Este projeto resolve esse problema ao conectar consumo, inflação e juros em uma narrativa única e acionável.
 
- *Solução Proposta*
+ # Solução Proposta
 
 O dashboard integra dados oficiais (IBGE e Banco Central) para responder, de forma prática:
 
