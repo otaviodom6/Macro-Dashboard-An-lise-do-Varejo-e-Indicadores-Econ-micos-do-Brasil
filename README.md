@@ -1,174 +1,137 @@
-# 📊 Macro Dashboard — Análise do Varejo e Indicadores Econômicos do Brasil
+Macro Dashboard — Inteligência de Mercado para o Varejo Brasileiro
 
-Este projeto consiste em um **dashboard interativo desenvolvido no Power BI** para análise da evolução do consumo e do desempenho do varejo brasileiro ao longo do tempo.
+Este projeto não é apenas um dashboard.
 
-O objetivo do projeto é transformar **dados econômicos oficiais em insights visuais claros**, permitindo compreender a dinâmica do consumo, inflação, juros e crescimento dos diferentes setores do varejo.
+Ele foi desenvolvido como uma ferramenta de suporte à decisão para entender quando o varejo deve acelerar, desacelerar ou ajustar sua estratégia, com base em indicadores macroeconômicos reais.
 
-O dashboard utiliza dados públicos de instituições oficiais e aplica **modelagem de dados, métricas em DAX e visualizações analíticas** para construir uma narrativa econômica.
+ Problema de Negócio
 
----
+Empresas do varejo frequentemente tomam decisões de expansão, precificação e estoque sem considerar adequadamente o contexto macroeconômico.
 
-# 📈 Visão Geral do Dashboard
+Como consequência:
 
-O dashboard está organizado em diferentes páginas analíticas:
+-Expandem em momentos de contração
+-Subestimam o impacto da inflação no consumo
+-Ignoram o efeito dos juros sobre a demanda
 
-## 1️⃣ Panorama Econômico
+Este projeto resolve esse problema ao conectar consumo, inflação e juros em uma narrativa única e acionável.
 
-Apresenta uma visão geral da economia e do consumo no Brasil.
+ *Solução Proposta*
 
-Indicadores principais:
+O dashboard integra dados oficiais (IBGE e Banco Central) para responder, de forma prática:
 
-- Crescimento do consumo
-- Receita nominal do varejo
-- Inflação (IPCA)
-- Taxa de juros (SELIC)
-- Indicador real de receita
-- Classificação do ciclo econômico
+O consumo está realmente crescendo ou é apenas efeito inflacionário?
+O cenário econômico favorece expansão ou cautela?
+Quais setores do varejo estão performando melhor no ciclo atual?
+Existe estabilidade ou alta volatilidade no consumo?
 
-Essa página responde à pergunta:
+ *Perguntas de Negócio Respondidas*
 
-> A economia está expandindo ou desacelerando?
+1. O momento é de crescimento ou retração?
 
----
+- (Panorama Econômico)
 
-## 2️⃣ Análise do Consumo
+2. O consumo é consistente ou volátil?
 
-Explora o comportamento do consumo ao longo do tempo.
+- (Análise do Consumo)
 
-Principais análises:
+3. Quais setores estão puxando o mercado?
 
-- Crescimento médio do consumo
-- Volatilidade do consumo
-- Evolução histórica do consumo
-- Tendência de longo prazo
-- Participação das atividades no varejo
+- (Desempenho do Varejo)
 
-Essa seção permite entender:
+4. O crescimento é sustentável ou pontual?
 
-> Como o consumo brasileiro evoluiu ao longo dos anos.
+- (Tendência + Volatilidade + Longo prazo)
 
----
+ *Aplicação Prática*
 
-## 3️⃣ Desempenho do Varejo
+Este dashboard pode ser utilizado por:
 
-Analisa o desempenho dos diferentes setores do varejo.
+Gestores de varejo
+- Ajuste de estoque, expansão e promoções
+Analistas de BI / Dados
+- Monitoramento de cenário econômico
+Investidores
+- Identificação de setores com maior potencial
+Consultorias
+- Análise de mercado e recomendação estratégica
 
-Indicadores apresentados:
+  *Estrutura Analítica*
+  
+ 🔹 1. Panorama Econômico
 
-- Crescimento acumulado do varejo
-- Crescimento mensal
-- Média de crescimento anual
-- Ranking de crescimento por setor
-- Setor com maior crescimento
-- Setor com menor crescimento
+Visão executiva do cenário atual:
 
-Essa página responde:
+-Crescimento do consumo
+-IPCA (pressão inflacionária)
+-SELIC (custo de crédito)
+-Indicador real (receita vs inflação)
+-Classificação do ciclo econômico
 
-> Quais setores estão impulsionando o crescimento do varejo?
+ *Insight-chave:*
 
----
+Diferencia crescimento real de crescimento inflacionário.
 
-# 📊 Fontes de Dados
+ 🔹 2. Análise do Consumo
 
-Os dados utilizados neste projeto são provenientes de instituições oficiais:
+Comportamento do consumo ao longo do tempo:
 
-**IBGE — SIDRA**
+-Crescimento médio
+-Volatilidade
+-Tendência de longo prazo
+-Evolução histórica
+-Participação por atividade
 
-- Tabela **8880** — Índice de Volume do Comércio
-- Tabela **8882** — Comércio Varejista por Atividade
+ *Insight-chave:*
 
-**Banco Central do Brasil**
+Identifica estabilidade vs instabilidade do consumo.
 
-- Taxa **SELIC**
+🔹 3. Desempenho do Varejo
 
-**IBGE**
+Análise setorial detalhada:
 
-- Índice de inflação **IPCA**
+-Crescimento acumulado
+-Crescimento mensal
+-Média anual
+-Ranking por setor
+-Top e bottom performers
 
-Os dados foram tratados e modelados antes da visualização no Power BI.
+ *Insight-chave:*
 
----
+Mostra onde está o crescimento real do mercado.
 
-# 🧠 Métricas e Análises Utilizadas
+⚙️ Diferencial do Projeto
 
-O dashboard utiliza diversas métricas analíticas, incluindo:
+Este projeto não apenas visualiza dados — ele:
 
-- Crescimento real do varejo
-- Crescimento Year-over-Year (YoY)
-- Crescimento Month-over-Month (MoM)
-- Média móvel de consumo
-- Ranking de crescimento por setor
-- Indicador de ciclo econômico
+✔ Integra múltiplas fontes econômicas
+✔ Ajusta indicadores nominais para termos reais
+✔ Aplica lógica de ciclo econômico
+✔ Traduz dados macro em impacto direto no varejo
 
-Essas métricas permitem transformar dados brutos em **informações estratégicas para análise econômica**.
+ Pipeline de Dados
 
----
+-Extração via API (SIDRA + BACEN)
+-Tratamento com Python (Pandas)
+-Modelagem no Power BI
+-Métricas em DAX
+-Visualização analítica
 
-# 🛠 Ferramentas Utilizadas
+  *Limitações e Evolução* 
 
-- **Power BI**
-- **DAX (Data Analysis Expressions)**
-- **API do SIDRA (IBGE)**
-- **Heroicons (ícones da interface)**
+Este projeto ainda está em evolução.
 
----
-# ⚙️ Processamento de Dados (ETL)
+Principais melhorias planejadas:
 
-Antes da construção do dashboard, os dados passaram por um processo de **ETL (Extract, Transform, Load)** utilizando Python.
+-Inclusão de previsão de consumo (forecast)
+-Classificação automática de ciclo econômico
+-Alertas de mudança de tendência
+-Versão otimizada para mobile
+-Disponibilização do .PBIX no GitHub
 
-Etapas realizadas:
+  *Objetivo Final*
 
-**Extract**
-
-- Coleta de dados econômicos através da API do **SIDRA (IBGE)**.
-- Extração de dados de inflação e taxa de juros.
-
-**Transform**
-
-- Limpeza e padronização das tabelas
-- Seleção das variáveis relevantes
-- Tratamento de datas
-- Organização das séries temporais
-
-**Load**
-
-- Exportação dos dados tratados para arquivos estruturados
-- Importação das tabelas no **Power BI**
-- Modelagem do relacionamento entre as tabelas
-
-Esse processo garantiu maior consistência e organização dos dados utilizados no dashboard.
-
-# 🏗 Arquitetura do Projeto
-
-Fluxo de dados utilizado no projeto:
-
-API SIDRA (IBGE)
-↓
-Extração com Python
-↓
-Tratamento e transformação com Pandas
-↓
-Exportação dos dados tratados
-↓
-Importação no Power BI
-↓
-Modelagem e criação de métricas em DAX
-↓
-Construção do dashboard analítico
-
-# 🎨 Design do Dashboard
-
-O dashboard foi desenvolvido com foco em **visualização profissional de dados**, incluindo:
-
-- Tema visual escuro
-- Navegação lateral interativa
-- Cartões de KPI
-- Indicadores de tendência
-- Ranking de setores do varejo
-
-O objetivo foi criar um dashboard com estética semelhante aos utilizados em **consultorias, áreas de business intelligence e análise econômica**.
-
----
+Transformar dados econômicos complexos em insights acionáveis para tomada de decisão no varejo.
 
 # 📷 Visualização do Projeto
 
@@ -183,14 +146,6 @@ O objetivo foi criar um dashboard com estética semelhante aos utilizados em **c
 
 <img width="1920" height="1080" alt="Setores" src="https://github.com/user-attachments/assets/67b2d6f2-eb57-4979-b458-0096e3a3ed4d" />
 
-# 🚀 Possíveis Melhorias Futuras
-
-Algumas melhorias que podem ser implementadas no projeto:
-
-- Atualização automática dos dados via API
-- Modelos de previsão para consumo
-- Tooltips analíticos avançados
-- Inclusão de novos indicadores macroeconômicos
 
 ---
 
