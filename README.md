@@ -47,7 +47,8 @@ Existe estabilidade ou alta volatilidade no consumo?
 
 Este dashboard pode ser utilizado por:
 
-Gestores de varejo
+# Gestores de varejo
+
 - Ajuste de estoque, expansão e promoções
 Analistas de BI / Dados
 - Monitoramento de cenário econômico
